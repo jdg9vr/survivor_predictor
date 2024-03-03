@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 import re
 import gender_guesser.detector as gender
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
 # Get all seasons
 seasons = requests.get("https://survivor.fandom.com/wiki/Survivor_(U.S.)#Seasons")
@@ -198,8 +200,11 @@ all_df["age"] = (all_df["start_date"] - all_df["birthdate"]) / pd.Timedelta('365
 
 # d.get_gender()
 
+load_dotenv()
+
 # Get embeddings
-client = OpenAI(api_key = "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")
+openai_key = os.getenv('OPENAI_KEY')
+client = OpenAI(api_key = openai_key)
 
 response = client.embeddings.create(
     input=all_df["occupation"][0],

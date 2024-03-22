@@ -1,3 +1,5 @@
-.env
+*/.env
 .vscode/*
 */.vscode/*
+.DS_Store
+*/__pycache__

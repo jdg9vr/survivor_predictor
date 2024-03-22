@@ -32,12 +32,12 @@ The model predicts using these variables:
 
 ### Model Details
 
-After testing various methods in the [model test file]("./model/model_test.py"), I selected a support vector machine (SVM) as my final predictive model. The parameters of this model are:
+After testing various methods in the [model test file](./model/model_test.py), I selected a support vector machine (SVM) as my final predictive model. The parameters of this model are:
 * Kernel: Linear
 * C: 10
 * Weights: Winner = 15x; Non-Winner = 1x
 
-Model details can be found in the [model utilities file]("./model/model_utils.py). The final predictions (and standard deviations) are the averages from 1000 bootstrap runs of the model.
+Model details can be found in the [model utilities file](./model/model_utils.py). The final predictions (and standard deviations) are the averages from 1000 bootstrap runs of the model.
 
 ## Past Predictions
 

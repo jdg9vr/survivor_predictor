@@ -4,7 +4,7 @@ Using AI to predict the winner of the popular CBS gameshow survivor!
 
 ## Survivor: 46 Prediction
 
-<img src="./images/plots/final_46.png" width="500"/>
+<img src="./images/plots/final_46.png" width="1000"/>
 
 The algorithm predicts Soda to win Survivor: 46! The model predicts 4 clear likely winners: Soda, Liz, Gem, and Kenzie.
 
@@ -26,7 +26,7 @@ The algorithm predicts Soda to win Survivor: 46! The model predicts 4 clear like
 The model predicts using these variables:
 * Player age
 * Player occupation (embedding)
-* Player description (embedding)
+* Player description (embedding)g
 * Number of days in the season
 * Season number (to capture high-level changes over time)
 
@@ -43,4 +43,4 @@ Model details can be found in the [model utilities file]("./model/model_utils.py
 
 ### Survivor: 45
 
-<img src="./images/plots/final_45.png" width="500"/>
+<img src="./images/plots/final_45.png" width="1000"/>
